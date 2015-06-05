@@ -1,143 +1,153 @@
 <!--
-   LandingPage.html
-   
-   Copyright 2014 Agile <care@agilecrm.com>
-   -->
+  LandingPage.html
+  
+  Copyright 2014 Agile <care@agilecrm.com>
+  -->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-   <head>
-      <title>Standard Lead</title>
-      <meta http-equiv="content-type" content="text/html;charset=utf-8" />
-      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-      <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-      <script src="https://YOUR_DOMAIN.agilecrm.com/stats/min/agile-min.js"></script>
-      <link rel="shortcut icon" href="https://instapage-static.s3.amazonaws.com/favicon-301.ico" type="image/ico">
-      <script>
-         _agile.set_account("YOUR_API_KEY","YOUR_DOMAIN");
-         _agile.track_page_view();
-      </script>
-   </head>
-   <body>
-      <div class="container">
-         <div class="heading text-center">
-            <h1><strong>This is your primary heading.</strong><br><small>Test different versions to see which converts better!</small></h1>
-         </div>
-         <br>
-         <br>
-         <div class="row col-md-offset-2">
-            <div style="height: 530px; width: 380px;" class="col-md-6">
-               <!--form info-->
-               <div class="info_header">
-                  <h3>
-                     <strong>Tell visitors about your offer</strong><br>
-                     <small>
-                     Click here to add / edit your own text. This should be used to tell a story and let your users know a little more about your product or service. How can you benefit them?
-                     </small>
-                  </h3>
-               </div>
-               <br><!--info header-->
-               <div class="point">
-                  <div class="row">
-                     <img style="float:left;" src="http://instapage-thumbnail.s3.amazonaws.com/19947-46609-43x38-checkmarkblue.png" alt="">
-                     <h3>First Important Point</h3>
-                     </span>
-                  </div>
-                  <p>Let your users know a little more about your product or service. How can you benefit them?</p>
-               </div>
-               <div class="point">
-                  <div class="row">
-                     <img style="float:left;" src="http://instapage-thumbnail.s3.amazonaws.com/19947-46609-43x38-checkmarkblue.png" alt="">
-                     <h3>Second Important Point</h3>
-                  </div>
-                  <p>Let your users know a little more about your product or service. How can you benefit them?</p>
-               </div>
-               <div class="point">
-                  <div class="row">
-                     <img style="float:left;" src="http://instapage-thumbnail.s3.amazonaws.com/19947-46609-43x38-checkmarkblue.png" alt="">
-                     <h3>Third Important Point</h3>
-                  </div>
-                  <p>Let your users know a little more about your product or service. How can you benefit them?</p>
-               </div>
-            </div>
-            <!--form info-->
-            <div class="form col-md-6 text-center" style="padding:0px 30px 0px 30px; background-color:#eafbfc; height: 580px; width: 380px; border-width:5px; border-radius: 10px 10px 10px 10px; border-style:solid; border-color:#0598e2">
-               <br>
-               <div class="formheading">
-                  <h3><strong>Get a Free Quote</strong> <br> <small>Test different form button text to see which converts better. You may be suprised! </small> </h3>
-               </div>
-               <form class="form-view" id="agile-form" onsubmit="_agile_synch_form_v2();return false;" method="get">
-                  <fieldset>
-                     <!-- Form Name -->
-                     <script type="text/javascript" src="https://YOUR_DOMAIN.agilecrm.com/stats/min/agile-min.js"></script>
-                     <legend id="agile-form-data" name="YOUR_DOMAIN YOUR_API_KEY # "></legend>
-                     <!-- Text input-->
-                     <div class="agile-group required-control">
-                        <label class="agile-label" for="name"></label>
-                        <div class="agile-field-xlarge agile-field">
-                           <input id="name" name="name" type="text" placeholder="Name*" class="agile-height-default" agile-field="first_name" required="">
-                        </div>
-                     </div>
-                     <!-- Text input-->
-                     <div class="agile-group required-control">
-                        <label class="agile-label" for="email"></label>
-                        <div class="agile-field-xlarge agile-field">
-                           <input id="email" name="email" type="text" placeholder="Email*" class="agile-height-default" agile-field="email" required="">
-                        </div>
-                     </div>
-                     <!-- Text input-->
-                     <div class="agile-group required-control">
-                        <label class="agile-label" for="phone"></label>
-                        <div class="agile-field-xlarge agile-field">
-                           <input id="phone" name="phone" type="text" placeholder="Phone*" class="agile-height-default" agile-field="phone" required="">
-                        </div>
-                     </div>
-                     <!-- Button -->
-                     <div class="agile-group">
-                        <label class="agile-label" for="submit">&nbsp;</label>
-                        <div class="agile-field">
-                           <button id="submit" type="submit" name="submit" class="agile-button">Contact Me</button><span id="agile-error-msg" style="margin: 0 0 0 10;"></span>
-                        </div>
-                     </div>
-                  </fieldset>
-               </form>
-               <hr>
-               <div class="formfooter" style="align:bottom;">
-                  <p>We will never share your information with a 3rd party. We hate spam just as much as you do!</p>
-               </div>
-               <!--form footer-->
-            </div>
-            <!--form div-->
-         </div>
-         <!--form with info-->
-         <br>
-         <br>
-         <div class="text-center">
-            <h4>"I've been a customer of YourCompany for 5 months & couldn't be more pleased with the service & guidance they've provided! I would recommend this to anyone looking to improve their business succes!"</h4>
-         </div>
-         <br>
-         <div class="logo text-center">
-            <img src="http://instapage-thumbnail.s3.amazonaws.com/19947-46613-85x71-profileicon.png" alt="">
-         </div>
-         <br>
-         <div class="text-center">
-            <h4><strong>Bruce Wayne</strong><br><small>Founder & CEO, Batman Inc.</small></h4>
-         </div>
-         <br>
-         <hr>
-         <div class="row">
-            <div class="col-md-6">
-               <p>2014 Copyright &copy; YourCompany Inc. </p>
-            </div>
-            <!--copyright-->
-            <div class="col-md-6 text-right">
-               <p>Privacy Policy | Terms of Use</p>
-            </div>
-            <!--privacy policy-->
-         </div>
-         <!--page footer-->
+  <head>
+    <title>Standard Lead</title>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="https://YOUR_DOMAIN.agilecrm.com/stats/min/agile-min.js"></script>
+    <link rel="shortcut icon" href="https://instapage-static.s3.amazonaws.com/favicon-301.ico" type="image/ico">
+    <script>
+      _agile.set_account("YOUR_API_KEY","YOUR_DOMAIN");
+      _agile.track_page_view();
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="heading text-center">
+        <h1><strong>This is your primary heading.</strong><br><small>Test different versions to see which converts better!</small></h1>
       </div>
-      <!--end of container-->
-   </body>
+      <br>
+      <br>
+      <div class="row col-md-offset-2">
+        <div style="height: 530px; width: 380px;" class="col-md-6">
+          <!--form info-->
+          <div class="info_header">
+            <h3>
+              <strong>Tell visitors about your offer</strong><br>
+              <small>
+              Click here to add / edit your own text. This should be used to tell a story and let your users know a little more about your product or service. How can you benefit them?
+              </small>
+            </h3>
+          </div>
+          <br><!--info header-->
+          <div class="point">
+            <div class="row">
+              <img style="float:left;" src="http://instapage-thumbnail.s3.amazonaws.com/19947-46609-43x38-checkmarkblue.png" alt="">
+              <h3>First Important Point</h3>
+              </span>
+            </div>
+            <p>Let your users know a little more about your product or service. How can you benefit them?</p>
+          </div>
+          <div class="point">
+            <div class="row">
+              <img style="float:left;" src="http://instapage-thumbnail.s3.amazonaws.com/19947-46609-43x38-checkmarkblue.png" alt="">
+              <h3>Second Important Point</h3>
+            </div>
+            <p>Let your users know a little more about your product or service. How can you benefit them?</p>
+          </div>
+          <div class="point">
+            <div class="row">
+              <img style="float:left;" src="http://instapage-thumbnail.s3.amazonaws.com/19947-46609-43x38-checkmarkblue.png" alt="">
+              <h3>Third Important Point</h3>
+            </div>
+            <p>Let your users know a little more about your product or service. How can you benefit them?</p>
+          </div>
+        </div>
+        <!--form info-->
+        <div class="form col-md-6 text-center" style="padding:0px 30px 0px 30px; background-color:#eafbfc; height: 580px; width: 380px; border-width:5px; border-radius: 10px 10px 10px 10px; border-style:solid; border-color:#0598e2">
+          <br>
+          <div class="formheading">
+            <h3><strong>Get a Free Quote</strong> <br> <small>Test different form button text to see which converts better. You may be suprised! </small> </h3>
+          </div>
+          <form class="form-view" id="agile-form" action="https://YOUR_DOMAIN.agilecrm.com/formsubmit">
+            <legend style="display:none;">leadform</legend>
+            <fieldset>
+              <!-- Form Name -->
+              <div style="display: none; height: 0px; width: 0px;">
+                <input type="hidden" id="_agile_form_name" name="_agile_form_name" value="leadform">
+                <input type="hidden" id="_agile_domain" name="_agile_domain" value="YOUR_DOMAIN">
+                <input type="hidden" id="_agile_api" name="_agile_api" value="YOUR_API_KEY">
+                <input type="hidden" id="_agile_redirect_url" name="_agile_redirect_url" value="https://www.agilecrm.com">
+                <input type="hidden" id="_agile_form_id_tags" name="tags" value="contact_from_leadform">
+              </div>
+              <!-- Text input-->
+              <div class="agile-group required-control">
+                <label class="agile-label" for="name"></label>
+                <div class="agile-field-xlarge agile-field">
+                  <input id="name" name="first_name" type="text" placeholder="Name*" class="agile-height-default" required="">
+                </div>
+                <div class="agile-custom-clear"></div>
+              </div>
+              <!-- Text input-->
+              <div class="agile-group required-control">
+                <label class="agile-label" for="email"></label>
+                <div class="agile-field-xlarge agile-field">
+                  <input id="email" name="email" type="email" placeholder="Email*" class="agile-height-default" required="">
+                </div>
+                <div class="agile-custom-clear"></div>
+              </div>
+              <!-- Text input-->
+              <div class="agile-group required-control">
+                <label class="agile-label" for="phone"></label>
+                <div class="agile-field-xlarge agile-field">
+                  <input id="phone" name="phone" type="text" placeholder="Phone*" class="agile-height-default" required="">
+                </div>
+                <div class="agile-custom-clear"></div>
+              </div>
+              <!-- Button -->
+              <div class="agile-group">
+                <div class="agile-field">
+                  <button type="submit" class="agile-button btn btn-success">Contact Me</button><span id="agile-error-msg"></span>
+                </div>
+              </div>
+            </fieldset>
+          </form>
+          <style type="text/css">
+            .form-view{font-family:Tahoma,Geneva,sans-serif;margin:0 auto;}.agile-group{margin-bottom:15px}.agile-label{float:left;overflow:hidden;padding:7px 25px 0 0;text-align:right;word-wrap:break-word;width:109px;font-size:15px}.agile-group label{font-weight:400}.agile-label::first-letter{text-transform:capitalize}.agile-field{display:inline-block}.agile-field-small{width:100px}.agile-field-medium{width:150px}.agile-field-large{width:200px}.agile-field-xlarge{width:250px}.agile-height-small{padding:5px 10px!important}.agile-height-default{padding:6px 12px!important}.agile-height-large{padding:10px 16px!important}.agile-field input[type=email],.agile-field input[type=text]{padding:6px 12px}.agile-field select{border-radius:4px;border:1px solid #ccc;width:100%;box-shadow:0 1px 1px rgba(0,0,0,.075) inset}.agile-input-group{border-collapse:separate;display:table;position:relative}.agile-input-group input[type=email],.agile-input-group input[type=text]{display:table-cell}.agile-input-group .agile-group-addon:first-child,.agile-input-group input[type=email]:first-child,.agile-input-group input[type=text]:first-child{border-bottom-right-radius:0;border-top-right-radius:0}.agile-input-group .agile-group-addon:last-child,.agile-input-group input[type=email]:last-child,.agile-input-group input[type=text]:last-child{border-bottom-left-radius:0;border-top-left-radius:0}.agile-group-addon:first-child,.agile-input-group input[type=email]:first-child,.agile-input-group input[type=text]:first-child{border-right:0 none}.agile-group-addon{background:#eee;border:1px solid #ccc;display:table-cell;font-size:14px;padding:3px 12px;text-align:center}.agile-group-addon-append{border-bottom-right-radius:4px;border-top-right-radius:4px}.agile-group-addon-prepend{border-top-left-radius:4px;border-bottom-left-radius:4px}input[type=email],input[type=password],input[type=text],textarea{border:1px solid #ccc;border-radius:4px;box-shadow:0 1px 1px rgba(0,0,0,.075) inset;color:#555;font-size:14px;line-height:1.42857;transition:border-color .15s ease-in-out 0s,box-shadow .15s ease-in-out 0s;width:100%;margin:0}input[type=email]:focus,input[type=password]:focus,input[type=text]:focus,textarea:focus{border:1px solid #66afe9}.agile-btn-red{background:#ff604f!important;margin-left:10px}.help-block{color:#999;margin:0;font-size:14px;text-transform:capitalize}legend{border-bottom:1px solid #eee;margin-bottom:18px;padding-bottom:6px;width:100%;font-weight:700;font-size:20px}fieldset{border:none}.agile-custom-clear{clear:both}#agile-error-msg{position:relative;top:2px;left:8px;color:red;font-size:12px}
+          </style>
+          <script type="text/javascript">
+            document.forms["agile-form"].onsubmit=function(e){e.preventDefault();try{_agile_synch_form_v3();}catch(err){this.submit();}};
+          </script>
+          <hr>
+          <div class="formfooter" style="align:bottom;">
+            <p>We will never share your information with a 3rd party. We hate spam just as much as you do!</p>
+          </div>
+          <!--form footer-->
+        </div>
+        <!--form div-->
+      </div>
+      <!--form with info-->
+      <br>
+      <br>
+      <div class="text-center">
+        <h4>"I've been a customer of YourCompany for 5 months & couldn't be more pleased with the service & guidance they've provided! I would recommend this to anyone looking to improve their business succes!"</h4>
+      </div>
+      <br>
+      <div class="text-center">
+        <h4><strong>Bruce Wayne</strong><br><small>Founder & CEO, Batman Inc.</small></h4>
+      </div>
+      <br>
+      <hr>
+      <div class="row">
+        <div class="col-md-6">
+          <p>2014 Copyright &copy; YourCompany Inc. </p>
+        </div>
+        <!--copyright-->
+        <div class="col-md-6 text-right">
+          <p>Privacy Policy | Terms of Use</p>
+        </div>
+        <!--privacy policy-->
+      </div>
+      <!--page footer-->
+    </div>
+    <!--end of container-->
+  </body>
 </html>
